@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Formulário três passos</title>
+		<link rel="stylesheet" href="./src/css/style.css">
+	</head>
+
+	<body>
+		<form id="formulario">
+			<ul id="progress">
+				<li class="ativo">Configurações</li>
+				<li>Perfis pessoais</li>
+				<li>Detalhes</li>
+			</ul>
+
+			<fieldset id="f1">
+				<h2>Configurações da conta</h2>
+				<h3>Algumas configurações</h3>
+				<input required type="text" name="email" placeholder="Email" />
+				<input required type="password" name="senha" placeholder="Senha" />
+				<input required type="password" name="csenha" placeholder="Confirme a senha" />
+				<input type="submit" name="next" class="next acao" value="Próximo" />
+			</fieldset>
+
+			<fieldset id="f2">
+				<h2>Perfis pessoais</h2>
+				<h3>Redes sociais</h3>
+				<input required type="text" name="facebook" placeholder="Facebook" />
+				<input required type="text" name="twitter" placeholder="Twitter" />
+				<input required type="text" name="google" placeholder="Google mais" />
+				<input type="submit" name="prev" class="prev acao" value="Anterior" />
+				<input type="submit" name="next" class="next acao" value="Próximo" />
+			</fieldset>
+
+			<fieldset id="f3">
+				<h2>Detalhes pessoais</h2>
+				<h3>Informe-nos alguns detalhes</h3>
+				<input required type="text" name="primeiro" placeholder="Primeiro Nome" />
+				<input required type="text" name="segundo" placeholder="Sobrenome" />
+				<input required type="text" name="telefone" placeholder="Telefone" />
+				<input type="submit" name="prev" class="prev acao" value="Anterior" />
+				<input type="submit" name="next" class="next acao" value="Próximo" />
+			</fieldset>
+
+			<fieldset id="f4">
+				<h2>Tudo certo!</h2>
+				<h3>Seus dados foram enviados com sucesso.</h3>
+			</fieldset>
+
+		</form>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+		<!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
+		<script src="./src/js/index.js"></script>
+
+	</body>
+</html>
